@@ -142,15 +142,12 @@ print(df['price'].describe())
     
     1. **Optimize Pricing Strategies:**
         - Increase rental rates for luxury and niche property types to maximize revenue from premium audiences.
-        - *Consider offering competitive pricing for instant booking properties to attract more travelers while ensuring profitability.*
     2. **Leverage Cleaning Fees:**
         - Highlight the inclusion of cleaning fees as a value-added service to maintain guest satisfaction while covering operational costs.
         - Educate hosts on setting cleaning fees to optimize total rental income.
-    3. ***Improve Instant Bookable Systems:***
-        - *Encourage more hosts to adopt instant booking to cater to travelers seeking convenience. However, maintain competitive pricing to balance demand and revenue.*
-    4. **Cancellation Policies:**
+    3. **Cancellation Policies:**
         - Promote flexible and moderate cancellation policies to attract more bookings, as stricter policies may deter potential guests.
-    5. **Target Marketing:**
+    4. **Target Marketing:**
         - Market entire homes/apartments as the most preferred room type, focusing on privacy and exclusivity.
         - Highlight the affordability and practicality of private and shared rooms to appeal to budget travelers.
     
