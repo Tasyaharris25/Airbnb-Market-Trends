@@ -109,20 +109,20 @@ print(df['price'].describe())
     
       <img width="119" alt="image" src="https://github.com/user-attachments/assets/20f9d891-8886-4f22-bd0d-e35dc893232b" />
 
-        - Based on the listings, the majority of properties include a cleaning fee, indicating hosts likely consider cleaning fees a standard practice to cover additional             maintenance costs.
+        - Based on the listings, the majority of properties include a cleaning fee, indicating hosts likely consider cleaning fees a standard practice to cover additional maintenance costs.
     - T-Test Result
 
 
 
     <img width="260" alt="image" src="https://github.com/user-attachments/assets/199cc25c-c099-4a56-9a6f-0fa6b8e3c868" />
 
-          - A t-test is a statistical tool used **to compare the means of two groups or the difference between one group's mean and a standard value**. T-tests are used to determine if differences are statistically significant, or if they occurred by chance.
-- **T-statistic (7.0523):** This value indicates a substantial difference in the average rental rates between properties with and without cleaning fees. *A higher absolute value of the t-statistic generally implies a stronger relationship.*
-- **p-value (0.0000):** The extremely low p-value (essentially zero) is highly significant. *This means there's an extremely low probability that the observed difference in rental rates between the two groups (with and without cleaning fees) occurred by chance.*
-- Properties with cleaning fees generally have higher rental rates. Hosts likely use cleaning fees to cover maintenance costs and may factor this into their overall pricing strategy
+          - A t-test is a statistical tool used to compare the means of two groups or the difference between one group's mean and a standard value. T-tests are used to determine if differences are statistically significant, or if they occurred by chance.
+          - **T-statistic (7.0523):** This value indicates a substantial difference in the average rental rates between properties with and without cleaning fees. *A higher absolute value of the t-statistic generally implies a stronger relationship.*
+          - **p-value (0.0000):** The extremely low p-value (essentially zero) is highly significant. *This means there's an extremely low probability that the observed difference in rental rates between the two groups (with and without cleaning fees) occurred by chance.*
+          - Properties with cleaning fees generally have higher rental rates. Hosts likely use cleaning fees to cover maintenance costs and may factor this into their overall pricing strategy
   
    
-          
+        
 6. Does Property with Instant Bookable Affect Rental Rate?
     - Rental Record by Instant Bookable System
 
