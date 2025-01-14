@@ -63,7 +63,6 @@ print(df['price'].describe())
     - average price by number of bedrooms
       
       <img width="262" alt="image" src="https://github.com/user-attachments/assets/28b1a89d-6598-4d80-83f5-ecf0a0578209" />
-
         - Rental prices increase as the number of bedrooms increases, reflecting the added spaces and accommodation capacity.
         - Properties with 6-10 bedrooms have significantly higher prices, targeting large groups or luxury markets.
         - Prices slightly fluctuate after 7 bedrooms, possible due to fewer listing.
