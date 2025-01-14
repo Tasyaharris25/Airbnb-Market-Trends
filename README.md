@@ -72,7 +72,7 @@ print(df['price'].describe())
 2. Customer Preference
     - Average Review Scores by Room Type
    
-     <img width="214" alt="image" src="https://github.com/user-attachments/assets/4bb9a351-86b2-4af3-ad8a-9ca30fdc2608" />
+      <img width="214" alt="image" src="https://github.com/user-attachments/assets/4bb9a351-86b2-4af3-ad8a-9ca30fdc2608" />
 
         - Entire home/apt has the highest average review score, indicating guests generally prefer and rate exclusive accommodations highly.
         - The difference in average review scores is minimal, implying that guests value their experiences in all room types. However, entire homes/apartments slightly edge           out in guest satisfaction.
@@ -88,6 +88,7 @@ print(df['price'].describe())
     - Distribution of Rentals by Cancellation Policy
       
       <img width="134" alt="image" src="https://github.com/user-attachments/assets/357ecf75-c0e5-4007-b416-7c6267a38c5a" />
+      
 
         - The majority of listings have a **strict cancellation policy**, followed by **flexible** and **moderate**.  **Super Strict 30** and **Super Strict 60** policies             are much less common, with only 112 and 17 rentals, respectively. This indicates that these policies are rare and likely not preferred by hosts or guests.
           
@@ -95,8 +96,10 @@ print(df['price'].describe())
         - *ANOVA test is an analysis of variance test is a statistical tool used to compare the means of multiple groups to determine if there are any significant         
           differences between them. ANOVA can help determine if differences are due to random chance or if they are meaningful.*
         - ANOVA is a statistical tool used to compare the means of multiple groups to determine if there are significant differences between them.
+
   
           <img width="187" alt="image" src="https://github.com/user-attachments/assets/dd66e897-883c-40f1-9216-7f3e4445df4f" />
+          
 
         - Based on the results, the high F-statistic indicates a significant difference in rental rates across different cancellation policies. The p-value is less than     
            0.05, confirming that **cancellation policy has a significant effect on rental rates**.
@@ -104,31 +107,37 @@ print(df['price'].describe())
 4. Does Property with Cleaning Fee Affect Rental Rate?
     - Rental Count by Cleaning Fee
     
-    <img width="119" alt="image" src="https://github.com/user-attachments/assets/20f9d891-8886-4f22-bd0d-e35dc893232b" />
+      <img width="119" alt="image" src="https://github.com/user-attachments/assets/20f9d891-8886-4f22-bd0d-e35dc893232b" />
 
         - Based on the listings, the majority of properties include a cleaning fee, indicating hosts likely consider cleaning fees a standard practice to cover additional             maintenance costs.
     - T- Test Result
 
+
     <img width="260" alt="image" src="https://github.com/user-attachments/assets/199cc25c-c099-4a56-9a6f-0fa6b8e3c868" />
+
 
         - A t-test is a statistical tool used **to compare the means of two groups or the difference between one group's mean and a standard value**. T-tests are used to   
           determine if differences are statistically significant, or if they occurred by chance.
         - **T-statistic (7.0523):** This value indicates a substantial difference in the average rental rates between properties with and without cleaning fees. *A higher             absolute value of the t-statistic generally implies a stronger relationship.*
         - **p-value (0.0000):** The extremely low p-value (essentially zero) is highly significant. *This means there's an extremely low probability that the observed       
-         difference in rental rates between the two groups (with and without cleaning fees) occurred by chance.*
+           difference in rental rates between the two groups (with and without cleaning fees) occurred by chance.*
         - Properties with cleaning fees generally have higher rental rates. Hosts likely use cleaning fees to cover maintenance costs and may factor this into their overall           pricing strategy
           
 5. Does Property with Instant Bookable Affect Rental Rate?
     - Rental Record by Instant Bookable System
 
+
     <img width="140" alt="image" src="https://github.com/user-attachments/assets/e2e02672-0085-4c89-ac97-db6a0e31e8a1" />
 
-        - The properties without instant booking has significantly more rentals than properties with instant booking, suggesting that hosts prefer a manual approval process           to manage bookings more selectively.
+
+        The properties without instant booking has significantly more rentals than properties with instant booking, suggesting that hosts prefer a manual approval process           to manage bookings more selectively.
     - T-Test Result:
+
 
      <img width="266" alt="image" src="https://github.com/user-attachments/assets/a06dabb4-e928-4129-8ed6-6f667c1844e4" />
 
-        - The t-test confirms that the presence of an instant booking system significantly affects rental rates. The negative T-statistic indicates that properties with               instant booking have, on average, **lower rental rates** compared to those without instant booking.
+
+        The t-test confirms that the presence of an instant booking system significantly affects rental rates. The negative T-statistic indicates that properties with               instant booking have, on average, **lower rental rates** compared to those without instant booking.
     
     **Recommendations and Insights**
     
