@@ -121,14 +121,16 @@ print(df['price'].describe())
     - Rental Record by Instant Bookable System
 
 
-     <img width="140" alt="image" src="https://github.com/user-attachments/assets/e2e02672-0085-4c89-ac97-db6a0e31e8a1" />
+       <img width="140" alt="image" src="https://github.com/user-attachments/assets/e2e02672-0085-4c89-ac97-db6a0e31e8a1" />
+
 
 
        The properties without instant booking has significantly more rentals than properties with instant booking, suggesting that hosts prefer a manual           approval process to manage bookings more selectively.
    
     - T-Test Result:
    
-     <img width="266" alt="image" src="https://github.com/user-attachments/assets/a06dabb4-e928-4129-8ed6-6f667c1844e4" />
+       <img width="266" alt="image" src="https://github.com/user-attachments/assets/a06dabb4-e928-4129-8ed6-6f667c1844e4" />
+
 
 
         The t-test confirms that the presence of an instant booking system significantly affects rental rates. The negative T-statistic indicates that              properties with instant booking have, on average, lower rental rates compared to those without instant booking.
