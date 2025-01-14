@@ -19,14 +19,20 @@ The goal of this project is to analyze rental property data to:
 **Data Preparation**
 
 - Check if there are duplicate data
-    
-    
+  ```
+  duplicates = df.duplicated()
+  print("Number of duplicate rows:", duplicates.sum())
+  ```
+  <img width="197" alt="image" src="https://github.com/user-attachments/assets/810b09d7-1812-47e0-8e3d-4e1aa3b511db" />
+
   no duplicate data
     
 - Data cleaning
-    
-    
-    There are no null values in the important fields being analyzed, so missing data can be ignored without affecting the integrity of the analysis.
+  ```
+  null_values = df.isnull().sum()
+  print(null_values)
+  ```
+  There are no null values in the important fields being analyzed, so missing data can be ignored without affecting the integrity of the analysis.
     
 
 **Analysis**
@@ -39,25 +45,42 @@ print(df['price'].describe())
 ```
 1. Pricing Analysis 
     - average price by room type
+      
+       <img width="154" alt="image" src="https://github.com/user-attachments/assets/a3853c62-c7f3-43d6-8095-8bb655c915e6" />
+
         - Entire home/apartment has the highest average price among room types, indicating guests are willing to pay a premium for complete privacy and exclusive access.
         - Private rooms and shared rooms have significantly lower prices than entire homes/apartments, suggesting that shared spaces or limited amenities reduce their value.
     - average price by property type
+  
+      <img width="170" alt="image" src="https://github.com/user-attachments/assets/a1a64bc8-1db9-4dd6-a6ac-053ebeb90705" />
+
         - Luxury property types such as Villas and Earth Houses command the highest prices due to their unique and upscale experiences.
         - Standard property types like Apartments and Houses fall in the mid-price range, offering traditional lodging with modern amenities.
         - Budget-friendly options like Dorms and Hostels are the most affordable, targeting travelers on tight budgets.
         - Niche experiences like Castles and Treehouses can charge a premium for their uniqueness.
     - average price by number of bedrooms
+      
+      <img width="262" alt="image" src="https://github.com/user-attachments/assets/28b1a89d-6598-4d80-83f5-ecf0a0578209" />
+
         - Rental prices increase as the number of bedrooms increases, reflecting the added spaces and accommodation capacity.
         - Properties with 6-10 bedrooms have significantly higher prices, targeting large groups or luxury markets.
         - Prices slightly fluctuate after 7 bedrooms, possible due to fewer listing.
         - Property with 0 bedrooms have a relatively higher average price, suggesting these might include premium locations or modern studio apartments.
+          
 2. Customer Preference
     - Average Review Scores by Room Type
+   
+   <img width="214" alt="image" src="https://github.com/user-attachments/assets/4bb9a351-86b2-4af3-ad8a-9ca30fdc2608" />
+
         - Entire home/apt has the highest average review score, indicating guests generally prefer and rate exclusive accommodations highly.
-        - The difference in average review scores is minimal, implying that guests value their experiences in all room types. However, entire homes/apartments slightly edge out in guest satisfaction.
+        - The difference in average review scores is minimal, implying that guests value their experiences in all room types. However, entire homes/apartments slightly edge           out in guest satisfaction.
     - Popularity Room Types
+
+    <img width="143" alt="image" src="https://github.com/user-attachments/assets/d174811f-9be4-4ce2-94c5-afe6ffde2004" />
+
         - Entire home/apt is the most popular room types, with the largest number of listings, reflects high demand for accommodations offering privacy and exclusivity.
         - Private rooms are the second most popular, while shared rooms are the least popular, indicating lower demand. Despite this, shared rooms still maintain reasonable review scores, satisfying their niche audience.
+   
 3. Does cancellation policy affect rental rate?
     - Distribution of Rentals by Cancellation Policy
         - The majority of listings have a **strict cancellation policy**, followed by **flexible** and **moderate**.  **Super Strict 30** and **Super Strict 60** policies are much less common, with only 112 and 17 rentals, respectively. This indicates that these policies are rare and likely not preferred by hosts or guests.
@@ -66,7 +89,7 @@ print(df['price'].describe())
         - ANOVA is a statistical tool used to compare the means of multiple groups to determine if there are significant differences between them.
         - Based on the results, the high F-statistic indicates a significant difference in rental rates across different cancellation policies. The p-value is less than 0.05, confirming that **cancellation policy has a significant effect on rental rates**.
         
-4. Does Property with Cleaning Fee Affect Rental Rate?
+3. Does Property with Cleaning Fee Affect Rental Rate?
     - Rental Count by Cleaning Fee
         - Based on the listings, the majority of properties include a cleaning fee, indicating hosts likely consider cleaning fees a standard practice to cover additional maintenance costs.
     - T- Test Result
@@ -74,7 +97,7 @@ print(df['price'].describe())
         - **T-statistic (7.0523):** This value indicates a substantial difference in the average rental rates between properties with and without cleaning fees. *A higher absolute value of the t-statistic generally implies a stronger relationship.*
         - **p-value (0.0000):** The extremely low p-value (essentially zero) is highly significant. *This means there's an extremely low probability that the observed difference in rental rates between the two groups (with and without cleaning fees) occurred by chance.*
         - Properties with cleaning fees generally have higher rental rates. Hosts likely use cleaning fees to cover maintenance costs and may factor this into their overall pricing strategy
-5. Does Property with Instant Bookable Affect Rental Rate?
+4. Does Property with Instant Bookable Affect Rental Rate?
     - Rental Record by Instant Bookable System
         - The properties without instant booking has significantly more rentals than properties with instant booking, suggesting that hosts prefer a manual approval process to manage bookings more selectively.
     - T-Test Result:
